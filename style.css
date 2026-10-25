@@ -97,3 +97,7 @@ body{font-variant-emoji:text}
 ar-g{display:inline}
 .ar{display:none!important}
 @media(hover:none),(max-width:820px){ar-g{display:none!important}.ar{display:inline-block!important}}
+
+/* Hero cards: size to their content so captions are never clipped */
+.media-card.art-card{height:auto}
+.media-card.art-card .card-caption{padding-bottom:18px}
