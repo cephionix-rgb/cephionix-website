@@ -90,3 +90,7 @@ header .brand img{height:90px;max-height:none} @media(max-width:700px){header .b
 .footer-bottom [data-cookie-settings]{cursor:pointer}
 @media(max-width:700px){.cookie-banner{left:16px;bottom:16px}}
 @media(prefers-reduced-motion:reduce){.cookie-banner{transition:none}}
+
+/* Arrows are inline SVG so phones never swap them for colour emoji */
+body{font-variant-emoji:text}
+.ar{display:inline-block;width:1em;height:1em;vertical-align:-.14em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
