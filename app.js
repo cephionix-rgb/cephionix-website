@@ -32,7 +32,7 @@ document.querySelectorAll('.swipe-dots i').forEach((d,i)=>d.addEventListener('cl
 
 /* Enquiry form: sends through the Google Apps Script web app (see apps-script/SETUP.md).
    While ENQUIRY_ENDPOINT is empty it falls back to opening the visitor's email app. */
-const ENQUIRY_ENDPOINT='';
+const ENQUIRY_ENDPOINT='https://script.google.com/macros/s/AKfycby3YuJfXSCsvXGOA94hpDAX_bxrOlPXsiEnzT_S8ihQ7KooeReSw82uOOeFTeqlTnw1/exec';
 (function(){
 const form=document.querySelector('#enquiry');if(!form)return;
 const endpoint=window.CX_ENQUIRY_ENDPOINT||ENQUIRY_ENDPOINT;
