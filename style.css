@@ -227,3 +227,10 @@ ar-g{display:inline}
 .sky-content h1 em{background:linear-gradient(var(--blue),var(--blue)) left center/0% 100% no-repeat;animation:sky-em-wipe .8s cubic-bezier(.2,.8,.2,1) 1.92s forwards}
 @keyframes sky-em-wipe{to{background-size:100% 100%}}
 @media(prefers-reduced-motion:reduce){.sky-content h1 em{background-size:100% 100%;animation:none}}
+
+/* Hero reel: endless, brisk scroll. Left column rises, right column descends. */
+.reel .reel-column{align-self:flex-start;height:max-content;padding-bottom:18px;animation:reel-up 40s linear infinite}
+.reel .reel-column.second{margin-top:-40px;animation-name:reel-down;animation-duration:36s;animation-delay:-5s;animation-direction:normal}
+@keyframes reel-up{to{transform:translateY(-50%)}}
+@keyframes reel-down{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.reel .reel-column{animation:none!important}}

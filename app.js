@@ -68,3 +68,13 @@ form.onsubmit=async e=>{
   }finally{clearTimeout(timer);btn.disabled=false;btn.removeAttribute('aria-busy')}
 };
 })();
+
+
+/* Hero reel: endless scroll. Cards are duplicated so the loop is seamless; speed is constant in px/s on every screen. */
+(function(){
+const cols=[...document.querySelectorAll('.reel-column')];if(!cols.length)return;
+cols.forEach(col=>{[...col.children].forEach(n=>{const c=n.cloneNode(true);c.setAttribute('aria-hidden','true');if(c.matches('a,button'))c.tabIndex=-1;c.querySelectorAll('a,button').forEach(x=>x.tabIndex=-1);col.appendChild(c)})});
+const SPEED=34;
+function tune(){cols.forEach(col=>{const L=col.scrollHeight/2;col.style.animationDuration=(L/SPEED).toFixed(1)+'s'})}
+tune();addEventListener('load',tune);let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(tune,200)});
+})();
