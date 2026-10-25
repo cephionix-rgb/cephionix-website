@@ -13,6 +13,8 @@
 const CONFIG = {
   OWNER_EMAIL: 'hello@cephionix.com',   // where enquiries are delivered
   FROM_NAME: 'Cephionix',               // sender name shown to visitors
+  FROM_ALIAS: 'noreply@cephionix.com',  // the thank-you email is sent from this address (needs Gmail "Send mail as", see SETUP.md)
+  REPLY_TO: 'hello@cephionix.com',      // replies to the thank-you email land here
   SITE_URL: 'https://www.cephionix.com',
   LOGO_URL: 'https://www.cephionix.com/assets/email-logo.png',
   AUTO_REPLY: true,                     // set false to switch the confirmation email off
@@ -130,7 +132,7 @@ function repliedRecently_(email) {
 
 function notifyOwner_(lead) {
   const received = Utilities.formatDate(new Date(), CONFIG.TIMEZONE, 'dd MMM yyyy, HH:mm') + ' IST';
-  MailApp.sendEmail({
+  send_({
     to: CONFIG.OWNER_EMAIL,
     subject: 'New enquiry: ' + lead.interest + ', ' + lead.name,
     body: ownerText_(lead, received),
@@ -141,14 +143,32 @@ function notifyOwner_(lead) {
 }
 
 function sendAutoReply_(lead) {
-  MailApp.sendEmail({
+  send_({
     to: lead.email,
     subject: 'We’ve received your enquiry | Cephionix',
     body: replyText_(lead),
     htmlBody: replyHtml_(lead),
     name: CONFIG.FROM_NAME,
-    replyTo: CONFIG.OWNER_EMAIL
+    replyTo: CONFIG.REPLY_TO,
+    fromAlias: CONFIG.FROM_ALIAS
   });
+}
+
+/**
+ * Sends an email. With fromAlias set (and verified in Gmail > Settings > Accounts >
+ * "Send mail as") the message goes out from that address; otherwise it falls back to
+ * the account that owns this script, so an enquiry is never lost.
+ */
+function send_(o) {
+  const aliases = o.fromAlias ? GmailApp.getAliases() : [];
+  if (o.fromAlias && aliases.indexOf(o.fromAlias) !== -1) {
+    GmailApp.sendEmail(o.to, o.subject, o.body, {
+      htmlBody: o.htmlBody, name: o.name, replyTo: o.replyTo, from: o.fromAlias
+    });
+    return;
+  }
+  if (o.fromAlias) console.warn('Alias ' + o.fromAlias + ' is not set up in Gmail "Send mail as"; sending from the script owner instead.');
+  MailApp.sendEmail({ to: o.to, subject: o.subject, body: o.body, htmlBody: o.htmlBody, name: o.name, replyTo: o.replyTo });
 }
 
 /* ------------------------------------------------------------------ */
@@ -183,11 +203,11 @@ function replyHtml_(lead) {
       '<a href="' + CONFIG.SITE_URL + '/#work" style="display:inline-block;padding:15px 28px;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;color:#ffffff;text-decoration:none;border-radius:99px;">See our work &rarr;</a>' +
     '</td></tr></table>' +
 
-    para_('Want to add something? Just reply to this email and it will reach us directly.', '30px 0 0') +
+    para_('Want to add something? Just reply to this email, or write to <a href="mailto:' + CONFIG.REPLY_TO + '" style="color:' + BRAND.blue + ';text-decoration:none;">' + CONFIG.REPLY_TO + '</a>. It reaches us directly.', '30px 0 0') +
     '<p style="margin:26px 0 0;font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5;color:' + BRAND.navy + ';"><strong>The Cephionix team</strong><br><span style="font-size:10px;letter-spacing:2.3px;color:' + BRAND.muted + ';">INTELLIGENCE AT THE CORE</span></p>';
 
   return shell_('We’ve received your enquiry', 'Thanks for getting in touch. We’ll reply within 1–2 working days.', body,
-    'You’re receiving this because you sent an enquiry through cephionix.com. If that wasn’t you, you can safely ignore this email.');
+    'This is an automated confirmation from an unmonitored address, but replies reach ' + CONFIG.REPLY_TO + '. You’re receiving it because you sent an enquiry through cephionix.com. If that wasn’t you, you can safely ignore it.');
 }
 
 function replyText_(lead) {
@@ -204,7 +224,7 @@ function replyText_(lead) {
     '2. We reply with questions, ideas or next steps.',
     '3. A short call, if it helps.',
     '',
-    'Want to add something? Just reply to this email.',
+    'Want to add something? Just reply to this email or write to ' + CONFIG.REPLY_TO + '.',
     '',
     'The Cephionix team',
     'Intelligence at the core',
@@ -328,4 +348,14 @@ function testPreview() {
   notifyOwner_(lead);
   sendAutoReply_(lead);
   console.log('Sent 2 sample emails to ' + CONFIG.OWNER_EMAIL);
+}
+
+/* Run from the editor to confirm the noreply alias is ready (see View > Executions for the log). */
+function checkSetup() {
+  const aliases = GmailApp.getAliases();
+  console.log('Account: ' + Session.getEffectiveUser().getEmail());
+  console.log('Send-as aliases: ' + (aliases.join(', ') || '(none)'));
+  console.log(aliases.indexOf(CONFIG.FROM_ALIAS) !== -1
+    ? 'OK: confirmations will be sent from ' + CONFIG.FROM_ALIAS
+    : 'NOT READY: add ' + CONFIG.FROM_ALIAS + ' under Gmail > Settings > Accounts > Send mail as. Until then confirmations come from the account itself.');
 }

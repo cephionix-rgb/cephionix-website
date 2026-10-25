@@ -1,89 +1,101 @@
-# Enquiry form + automatic reply: setup (about 10 minutes)
+# Enquiry form + thank-you email: setup
 
-This makes the contact form on cephionix.com send the enquiry straight to
-**hello@cephionix.com** and send the visitor a branded confirmation email.
-It runs on Google Apps Script, so it is free and needs no server.
+Flow: visitor submits the form on cephionix.com, then
 
-## 1. Pick the sending account
+1. the enquiry is emailed to **hello@cephionix.com** (Reply answers the visitor), and
+2. the visitor gets a branded thank-you email **from noreply@cephionix.com**
+   (replies go to hello@cephionix.com).
 
-Sign in to Google as **hello@cephionix.com** (your Google Workspace mailbox).
-Emails will be sent *from that account*, which keeps the confirmation looking
-like it comes from your company and passes spam checks.
+Runs on Google Apps Script under **cephionix@gmail.com**. Free, no server.
 
-> Using a personal Gmail instead? It works, but confirmations will come from
-> that Gmail address, and the daily send limit is lower (about 100 vs 1,500).
+## Status
 
-## 2. Create the script
+- Script pushed with clasp (script ID in `.clasp.json`, which is git-ignored).
+- Web app deployed (version 1). Update it any time with:
+  `clasp push -f --user cephionix && clasp deploy -i <deploymentId> --user cephionix`
+- clasp has a separate named login for this project (`--user cephionix`), so other
+  Google accounts logged in to clasp are not affected.
 
-1. Go to **https://script.google.com** and click **New project**.
-2. Click the project name at the top and rename it **Cephionix Enquiry**.
-3. Delete everything in the editor, then paste the whole contents of
-   `apps-script/Code.gs` from this repo.
-4. Click **Save** (disk icon).
+## Steps only you can do (about 10 minutes)
 
-## 3. Test the emails (and grant permission)
+### 1. Authorize the script (once)
 
-1. In the function dropdown at the top, choose **testPreview**, then click **Run**.
-2. Google asks for permission: **Review permissions → choose the account →
-   Advanced → Go to Cephionix Enquiry (unsafe) → Allow**.
-   (The "unsafe" wording appears for every script you write yourself.)
-3. Check the hello@cephionix.com inbox. You should see two emails:
-   the **new enquiry** notification and the **confirmation** a visitor receives.
+Open the script, signed in as **cephionix@gmail.com**:
+`https://script.google.com/d/<SCRIPT_ID>/edit`
 
-## 4. Publish it as a web app
+Choose **checkSetup** in the function dropdown, click **Run**, then
+**Review permissions → Advanced → Go to (project) (unsafe) → Allow**.
+("Unsafe" shows for every script you write yourself.)
 
-1. Click **Deploy → New deployment**.
-2. Click the gear icon next to "Select type" and choose **Web app**.
-3. Set:
-   - **Description:** Enquiry form
-   - **Execute as:** *Me*
-   - **Who has access:** *Anyone*
-4. Click **Deploy** and copy the **Web app URL**. It ends in `/exec`.
+The log shows whether the noreply address is ready (step 2).
 
-## 5. Connect the website
+### 2. Let Gmail send as noreply@cephionix.com
 
-Send the Web app URL to your developer (or paste it into `ENQUIRY_ENDPOINT`
-at the bottom of `app.js`). The site then:
+1. Make sure mail to **noreply@cephionix.com** reaches you. In the Google Workspace
+   admin console: *Directory → Users → hello@cephionix.com → Add alternate email
+   address → noreply*. (Gmail sends a verification message to that address.)
+2. In the **cephionix@gmail.com** Gmail: gear icon → *See all settings →
+   Accounts and Import → Send mail as → Add another email address*.
+3. Name: **Cephionix**. Email: **noreply@cephionix.com**. Keep *Treat as an alias* ticked.
+   Next, then *Send verification*.
+4. Open the verification email in hello@cephionix.com and click the link.
 
-- shows **Send enquiry** instead of "Prepare your enquiry"
-- sends the form to your script
-- shows a thank-you message to the visitor
-- updates the Privacy Policy to describe the new flow
+Until this is done the thank-you email still goes out, but from cephionix@gmail.com.
 
-Until the URL is added, the form keeps working the old way (it opens the
-visitor's email app).
+### 3. Send yourself the two sample emails
+
+Run **testPreview** in the editor. hello@cephionix.com receives the new-enquiry
+email and a sample thank-you (sent from noreply@ once step 2 is done).
+
+### 4. Tell the developer to switch the website form on
+
+Once the web app URL answers (it returns `{"ok":true,...}` when opened in a
+browser), it goes into `ENQUIRY_ENDPOINT` in `app.js` and the Privacy Policy is
+updated at the same time.
+
+## Strongly recommended: email authentication (DNS)
+
+cephionix.com currently has Google Workspace MX records but **no SPF, DKIM or
+DMARC**. Without them, mail from your domain (including these emails) is more
+likely to land in spam. Add in Namecheap (*Advanced DNS*):
+
+| Type | Host | Value |
+| --- | --- | --- |
+| TXT | `@` | `v=spf1 include:_spf.google.com ~all` |
+| TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:hello@cephionix.com` |
+
+Then in the Workspace admin console: *Apps → Google Workspace → Gmail →
+Authenticate email*, generate the DKIM key, add the TXT record it shows, and
+click *Start authentication*.
+
+Note: mail sent through a personal Gmail "Send mail as" is signed by gmail.com,
+so it may show "via gmail.com" in some inboxes. For fully aligned sending, deploy
+the same script from a Workspace account on cephionix.com instead.
 
 ## What the emails look like
 
-- **To you:** "New enquiry: Custom software, Alex Singh". The *Reply* button
-  answers the visitor directly.
-- **To the visitor:** "Thanks, Alex. We've got your message." with a summary of
-  what they sent, what happens next, and a link to your work.
+- **To you:** "New enquiry: Custom software, Alex Singh", a clean table of the
+  details and a *Reply to Alex* button.
+- **To the visitor:** "Thanks, Alex. We've got your message." with what they sent,
+  what happens next, and a link to your work. A plain-text version is included.
 
-Edit the wording, colours or the "1-2 working days" promise in `Code.gs`
-(`replyHtml_` and `replyText_`).
+Change wording, colours or the "1-2 working days" promise in `Code.gs`
+(`replyHtml_`, `replyText_`, `CONFIG`).
 
 ## Built-in protection
 
 - Hidden honeypot field and a minimum fill time catch most bots.
-- Only one confirmation per email address every 6 hours (you are still notified).
+- One thank-you per email address every 6 hours (you are still notified).
 - Site-wide limit of 40 enquiries per hour.
 - Visitor text is HTML-escaped and line breaks are stripped from names, so it
   cannot inject markup or email headers.
 - Messages with more than 3 links are dropped as spam.
 
-## Changing things later
-
-After editing `Code.gs`, redeploy: **Deploy → Manage deployments → pencil icon →
-Version: New version → Deploy**. The URL stays the same.
-
-To switch the confirmation email off, set `AUTO_REPLY: false`.
-
 ## Troubleshooting
 
 | Problem | Fix |
 | --- | --- |
-| "We couldn't send that just now" on the site | Check *Who has access* is **Anyone**, and that you redeployed after editing. |
-| No emails arrive | Run `testPreview` again and check Spam. Look at **Executions** in the left sidebar for errors. |
-| Confirmation goes to Spam | Deploy from the hello@cephionix.com Workspace account, not a personal Gmail. |
-| "Service invoked too many times" | You hit the daily email quota. It resets within 24 hours. |
+| Web app URL shows "Access denied" | Do step 1 (authorize), then redeploy and retry. |
+| Thank-you comes from cephionix@gmail.com | Step 2 is not finished. Run `checkSetup` to see the aliases Gmail knows. |
+| No emails arrive | Check Spam, and *Executions* in the script editor for errors. |
+| "Service invoked too many times" | Daily mail quota reached (about 100/day on personal Gmail). It resets within 24 hours. |
