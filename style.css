@@ -176,3 +176,11 @@ ar-g{display:inline}
 .product-content .pill.blue:hover,.product-content .pill.blue:focus-visible{background-color:var(--blue);border-color:#071936}
 .product-content .pill.outline:hover,.product-content .pill.outline:focus-visible{background-color:transparent;border-color:#064bff;color:#fff}
 @media(prefers-reduced-motion:reduce){.product-content .pill{transition:none}}
+
+/* Stronger liquid glass on the product labels (extra on NavCalc / In development) */
+.art-label{border:1px solid rgba(255,255,255,.75);background:linear-gradient(135deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.05) 44%,rgba(110,165,255,.24) 100%);-webkit-backdrop-filter:blur(14px) saturate(2.6) contrast(1.1) brightness(1.08);backdrop-filter:blur(14px) saturate(2.6) contrast(1.1) brightness(1.08);box-shadow:inset 3px 3px 8px rgba(255,255,255,.72),inset -3px -3px 9px rgba(90,150,255,.4),inset 0 0 22px rgba(255,255,255,.22),inset 0 -12px 20px rgba(60,120,255,.14),0 16px 38px rgba(7,25,54,.26)}
+.art-label::after{animation:glass-sheen 7s ease-in-out infinite}
+@keyframes glass-sheen{0%,62%{left:-70%}86%,100%{left:135%}}
+.product-visual[data-key=navcalc] .art-label{color:#06204a;border-color:rgba(255,255,255,.85);background:linear-gradient(135deg,rgba(255,255,255,.26) 0%,rgba(80,140,255,.1) 42%,rgba(40,100,240,.34) 100%);-webkit-backdrop-filter:blur(20px) saturate(3.1) contrast(1.14) brightness(1.04);backdrop-filter:blur(20px) saturate(3.1) contrast(1.14) brightness(1.04);box-shadow:inset 3px 3px 9px rgba(255,255,255,.85),inset -4px -4px 12px rgba(40,100,240,.5),inset 0 0 26px rgba(255,255,255,.28),inset 0 -14px 24px rgba(30,90,230,.2),0 20px 44px rgba(6,32,74,.38)}
+.product-visual[data-key=navcalc] .art-label small{color:#0d3a82;font-weight:700}
+@media(prefers-reduced-motion:reduce){.art-label::after{animation:none}}
