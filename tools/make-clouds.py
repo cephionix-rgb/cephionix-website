@@ -90,5 +90,7 @@ if __name__ == '__main__':
     save(cloud(900, 470, 23, spread=0.95, density=1.05), 'cloud-2.webp', facing_gain=0.27)
     save(cloud(760, 400, 37, spread=1.05), 'cloud-3.webp', facing_gain=0.27)
     save(cloud(600, 320, 51, spread=1.0, density=0.95), 'cloud-4.webp', facing_gain=0.27)
+    save(cloud(1100, 420, 64, spread=1.25, flat=0.86, density=0.92), 'cloud-5.webp', facing_gain=0.27)
+    save(cloud(700, 540, 77, spread=0.82, flat=0.84, density=1.08), 'cloud-6.webp', facing_gain=0.27)
     save(bank(1500, 1100, 5, 'left'), 'cloudbank-left.webp', 80, tscale=5.0, facing_gain=0.36)
     save(bank(1500, 1100, 13, 'right'), 'cloudbank-right.webp', 80, tscale=5.0, facing_gain=0.36)
