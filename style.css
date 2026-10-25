@@ -101,3 +101,10 @@ ar-g{display:inline}
 /* Hero cards: size to their content so captions are never clipped */
 .media-card.art-card{height:auto}
 .media-card.art-card .card-caption{padding-bottom:18px}
+
+/* Intro exit: soft iris that opens from the centre and reveals the page */
+@property --iris{syntax:'<percentage>';inherits:false;initial-value:-12%}
+.intro-pending .opening,.intro-ready .opening{clip-path:none;--iris:-12%;-webkit-mask-image:radial-gradient(circle at 50% 50%,transparent var(--iris),#000 calc(var(--iris) + 14%));mask-image:radial-gradient(circle at 50% 50%,transparent var(--iris),#000 calc(var(--iris) + 14%));transition:--iris 1.25s cubic-bezier(.65,0,.2,1),opacity .4s ease 1s,visibility 0s linear 1.4s}
+.intro-ready .opening{--iris:100%;opacity:0;visibility:hidden;clip-path:none}
+.opening-top,.opening-center,.opening-bottom{transition:opacity .5s ease,transform 1.2s cubic-bezier(.65,0,.2,1)}
+.intro-ready .opening-top,.intro-ready .opening-center,.intro-ready .opening-bottom{opacity:0;transform:scale(1.04)}

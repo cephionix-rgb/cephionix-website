@@ -1,0 +1,491 @@
+- generic [active] [ref=f26e1]:
+  - link "Skip to content" [ref=f26e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f26e3]:
+    - link "Cephionix home" [ref=f26e4] [cursor=pointer]:
+      - /url: "#"
+      - img "CEPHIONIX — Intelligence at the core" [ref=f26e5]
+    - navigation "Main navigation" [ref=f26e6]:
+      - link "Products" [ref=f26e7] [cursor=pointer]:
+        - /url: "#products"
+      - link "Our work" [ref=f26e8] [cursor=pointer]:
+        - /url: "#work"
+      - link "About" [ref=f26e9] [cursor=pointer]:
+        - /url: /about
+    - link "Let’s talk ↗" [ref=f26e10] [cursor=pointer]:
+      - /url: "#contact"
+      - text: Let’s talk
+      - generic [ref=f26e11]: ↗
+  - main [ref=f26e13]:
+    - generic [ref=f26e14]:
+      - generic [ref=f26e15]:
+        - link "Explore the intelligence at our core" [ref=f26e16] [cursor=pointer]:
+          - /url: "#ecosystem"
+          - generic [ref=f26e17]: INTELLIGENCE AT THE CORE
+        - heading "Big ideas. Intelligent software." [level=1] [ref=f26e19]:
+          - generic [ref=f26e21]:
+            - generic [ref=f26e22]: B
+            - generic [ref=f26e23]: I
+            - generic [ref=f26e24]: G
+            - generic [ref=f26e26]: I
+            - generic [ref=f26e27]: D
+            - generic [ref=f26e28]: E
+            - generic [ref=f26e29]: A
+            - generic [ref=f26e30]: S
+            - generic [ref=f26e31]: .
+          - emphasis [ref=f26e33]: INTELLIGENT
+          - generic [ref=f26e35]:
+            - generic [ref=f26e36]: S
+            - generic [ref=f26e37]: O
+            - generic [ref=f26e38]: F
+            - generic [ref=f26e39]: T
+            - generic [ref=f26e40]: W
+            - generic [ref=f26e41]: A
+            - generic [ref=f26e42]: R
+            - generic [ref=f26e43]: E
+            - generic [ref=f26e44]: .
+        - paragraph [ref=f26e45]: From aviation platforms to your next big idea.We build software that moves you forward.
+        - generic [ref=f26e46]:
+          - link "Explore our products ↗" [ref=f26e47] [cursor=pointer]:
+            - /url: "#products"
+            - text: Explore our products
+            - generic [ref=f26e48]: ↗
+          - link "Start a project" [ref=f26e49] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=f26e50]: Independent thinking. Real-world impact.
+      - generic "Our product portfolio" [ref=f26e52]:
+        - generic [ref=f26e53]:
+          - link "NeuralWings Aviation management Original NeuralWings product illustration Aviation, intelligently connected. ↗" [ref=f26e54] [cursor=pointer]:
+            - /url: "#products"
+            - generic [ref=f26e55]:
+              - text: NeuralWings
+              - generic [ref=f26e56]: Aviation management
+            - img "Original NeuralWings product illustration" [ref=f26e57]
+            - generic [ref=f26e58]: Aviation, intelligently connected. ↗
+          - link "NavCalc Coming soon Original NavCalc product illustration 100+ calculations · ~25 instruments ↗" [ref=f26e59] [cursor=pointer]:
+            - /url: "#products"
+            - generic [ref=f26e60]:
+              - text: NavCalc
+              - generic [ref=f26e61]: Coming soon
+            - img "Original NavCalc product illustration" [ref=f26e62]
+            - generic [ref=f26e63]: 100+ calculations · ~25 instruments ↗
+          - generic [ref=f26e64]:
+            - text: THE WAY WE THINK
+            - strong [ref=f26e65]: Complexity,made clear.
+            - text: "{ intelligence: \"at the core\" }"
+        - generic [ref=f26e67]:
+          - link "EarnWings Pilot learning Original EarnWings product illustration Your journey to the flight deck. ↗" [ref=f26e68] [cursor=pointer]:
+            - /url: "#products"
+            - generic [ref=f26e69]:
+              - text: EarnWings
+              - generic [ref=f26e70]: Pilot learning
+            - img "Original EarnWings product illustration" [ref=f26e71]
+            - generic [ref=f26e72]: Your journey to the flight deck. ↗
+          - link "NavCalc precision instruments illustration PRECISION, REIMAGINED ↗" [ref=f26e73] [cursor=pointer]:
+            - /url: "#products"
+            - img "NavCalc precision instruments illustration" [ref=f26e74]
+            - generic [ref=f26e75]: PRECISION, REIMAGINED ↗
+          - img "Cephionix intelligence core" [ref=f26e77]
+      - button "Pause motion" [ref=f26e78] [cursor=pointer]
+    - generic [ref=f26e80]: SOFTWARE DEVELOPMENT INTELLIGENT SYSTEMS DIGITAL PRODUCTS SOFTWARE DEVELOPMENT INTELLIGENT SYSTEMS DIGITAL PRODUCTS
+    - generic [ref=f26e87]:
+      - generic [ref=f26e88]:
+        - generic [ref=f26e89]:
+          - generic [ref=f26e90]: 01 / THE CEPHIONIX ECOSYSTEM
+          - heading "One core. Endless possibility." [level=2] [ref=f26e91]: One core.Endless possibility.
+        - paragraph [ref=f26e92]: Connected by a shared ambition:make complex work feel simple.Choose a product to explore.
+      - generic [ref=f26e93]:
+        - 'img "One connected miniature ecosystem: NeuralWings, EarnWings, NavCalc and custom CRM dashboards" [ref=f26e94]'
+        - generic:
+          - img "CEPHIONIX geometric intelligence core"
+        - button "Explore NeuralWings" [ref=f26e95] [cursor=pointer]: "01"
+        - button "Explore EarnWings" [ref=f26e96] [cursor=pointer]: "02"
+        - button "Explore NavCalc" [ref=f26e97] [cursor=pointer]: "03"
+        - button "Explore CRM and dashboards" [ref=f26e98] [cursor=pointer]: "04"
+      - generic [ref=f26e99]:
+        - button "01 NeuralWings Aviation management ↗" [ref=f26e100] [cursor=pointer]:
+          - generic [ref=f26e101]: "01"
+          - generic [ref=f26e102]:
+            - text: NeuralWings
+            - generic [ref=f26e103]: Aviation management
+          - generic [ref=f26e104]: ↗
+        - button "02 EarnWings Pilot learning ↗" [ref=f26e105] [cursor=pointer]:
+          - generic [ref=f26e106]: "02"
+          - generic [ref=f26e107]:
+            - text: EarnWings
+            - generic [ref=f26e108]: Pilot learning
+          - generic [ref=f26e109]: ↗
+        - button "03 NavCalc Precision calculations ↗" [ref=f26e110] [cursor=pointer]:
+          - generic [ref=f26e111]: "03"
+          - generic [ref=f26e112]:
+            - text: NavCalc
+            - generic [ref=f26e113]: Precision calculations
+          - generic [ref=f26e114]: ↗
+        - button "04 CRM & dashboards Built around your business ↗" [ref=f26e115] [cursor=pointer]:
+          - generic [ref=f26e116]: "04"
+          - generic [ref=f26e117]:
+            - text: CRM & dashboards
+            - generic [ref=f26e118]: Built around your business
+          - generic [ref=f26e119]: ↗
+      - generic [ref=f26e120]:
+        - generic [ref=f26e121]: PRODUCTS + CUSTOM SYSTEMS. ONE SHARED VISION.
+        - generic [ref=f26e122]: Explore the ecosystem ↓
+    - generic [ref=f26e123]:
+      - generic [ref=f26e124]:
+        - generic [ref=f26e125]:
+          - generic [ref=f26e126]: 02 / BUILT WITH PURPOSE
+          - heading "Meet your next advantage." [level=2] [ref=f26e127]: Meet yournext advantage.
+        - paragraph [ref=f26e128]: Specialist aviation products.Custom systems for your business.
+      - tablist "Products" [ref=f26e129]:
+        - tab "01 NeuralWings ↗" [selected] [ref=f26e130] [cursor=pointer]:
+          - text: 01 NeuralWings
+          - generic [ref=f26e131]: ↗
+        - tab "02 EarnWings ↗" [ref=f26e132] [cursor=pointer]:
+          - text: 02 EarnWings
+          - generic [ref=f26e133]: ↗
+        - tab "03 NavCalc ↗" [ref=f26e134] [cursor=pointer]:
+          - text: 03 NavCalc
+          - generic [ref=f26e135]: ↗
+        - tab "04 CRM & dashboards ↗" [ref=f26e136] [cursor=pointer]:
+          - text: 04 CRM & dashboards
+          - generic [ref=f26e137]: ↗
+      - tabpanel [ref=f26e138]:
+        - generic [ref=f26e139]:
+          - img "Original NeuralWings flight academy and AI operations illustration" [ref=f26e140]
+          - generic [ref=f26e141]:
+            - text: NeuralWings
+            - generic [ref=f26e142]: PRODUCT ILLUSTRATION
+        - generic [ref=f26e143]:
+          - text: AVIATION MANAGEMENT
+          - heading "A connected flight academy." [level=3] [ref=f26e144]
+          - paragraph [ref=f26e145]: Bring flight operations, fleet management, training records and administration into one platform. NeuralWings helps flight training organisations coordinate the work behind every flight.
+          - generic [ref=f26e146]:
+            - generic [ref=f26e147]: Flight operations
+            - generic [ref=f26e148]: Fleet & maintenance
+            - generic [ref=f26e149]: Student management
+            - generic [ref=f26e150]: AI scheduling
+          - link "Explore NeuralWings ↗" [ref=f26e151] [cursor=pointer]:
+            - /url: https://neuralwings.org/
+            - text: Explore NeuralWings
+            - generic [ref=f26e152]: ↗
+    - generic [ref=f26e153]:
+      - generic [ref=f26e154]: 03 / YOUR IDEA. OUR NEXT CHALLENGE.
+      - heading "Built for your world. Designed to move it." [level=2] [ref=f26e155]: Built for your world.Designed to move it.
+      - generic [ref=f26e156]:
+        - article [ref=f26e157]:
+          - text: "01"
+          - heading "Custom software & CRM" [level=3] [ref=f26e158]
+          - paragraph [ref=f26e159]: Purpose-built software and CRMs that connect your leads, customers, sales pipelines, follow-ups and everyday workflows.
+          - link "Let’s build it ↗" [ref=f26e160] [cursor=pointer]:
+            - /url: "#contact"
+        - article [ref=f26e161]:
+          - text: "02"
+          - heading "Web & mobile" [level=3] [ref=f26e162]
+          - paragraph [ref=f26e163]: Distinctive websites and useful applications, designed around the people who use them.
+          - link "Make it happen ↗" [ref=f26e164] [cursor=pointer]:
+            - /url: "#contact"
+        - article [ref=f26e165]:
+          - text: "03"
+          - heading "Intelligent systems" [level=3] [ref=f26e166]
+          - paragraph [ref=f26e167]: Automation, calculation engines and decision-support tools for demanding problems.
+          - link "Explore the idea ↗" [ref=f26e168] [cursor=pointer]:
+            - /url: "#contact"
+    - generic [ref=f26e169]:
+      - generic [ref=f26e170]: 04 / THE PEOPLE BEHIND THE PRODUCTS
+      - generic [ref=f26e171]:
+        - heading [level=2] [ref=f26e172]:
+          - text: Curiosity isour starting point.
+          - emphasis [ref=f26e173]: Building iswhat we do.
+        - generic [ref=f26e174]:
+          - paragraph [ref=f26e175]: We’re CEPHIONIX. A software company turning ambitious ideas into practical digital products.
+          - paragraph [ref=f26e176]: "Our work spans aviation management, pilot learning and precision calculation. Across every product, our focus stays the same: understand the problem, question the complexity and build something useful."
+          - paragraph [ref=f26e177]: We bring that same approach to custom software and CRMs for our clients — helping teams manage customer relationships, sales pipelines and day-to-day operations in one place.
+          - generic [ref=f26e178]: CEPHIONIXINTELLIGENCE AT THE CORE
+      - link "Inside CEPHIONIX ↗" [ref=f26e179] [cursor=pointer]:
+        - /url: /about
+        - text: Inside CEPHIONIX
+        - generic [ref=f26e180]: ↗
+      - generic [ref=f26e181]:
+        - generic [ref=f26e182]:
+          - text: 01 / Discover
+          - paragraph [ref=f26e183]: Understand the people and the problem.
+        - generic [ref=f26e184]:
+          - text: 02 / Design
+          - paragraph [ref=f26e185]: Make the direction tangible and testable.
+        - generic [ref=f26e186]:
+          - text: 03 / Build
+          - paragraph [ref=f26e187]: Turn the idea into working software.
+        - generic [ref=f26e188]:
+          - text: 04 / Refine
+          - paragraph [ref=f26e189]: Test, learn and improve the experience.
+    - generic [ref=f26e190]:
+      - generic [ref=f26e191]:
+        - generic [ref=f26e192]:
+          - generic [ref=f26e193]: 05 / OUR WORK
+          - heading [level=2] [ref=f26e194]:
+            - text: Different worlds.
+            - emphasis [ref=f26e195]: Our work.
+        - paragraph [ref=f26e196]: Four names. Four different worlds.Built by CEPHIONIX.
+      - generic [ref=f26e197]:
+        - link "Visit NeuralWings website" [ref=f26e198] [cursor=pointer]:
+          - /url: https://neuralwings.org/
+          - generic [aria-hidden] [ref=f26e200]:
+            - generic [ref=f26e202]:
+              - generic [ref=f26e203]: "N"
+              - generic [ref=f26e204]: e
+              - generic [ref=f26e205]: u
+              - generic [ref=f26e206]: r
+              - generic [ref=f26e207]: a
+              - generic [ref=f26e208]: l
+              - generic [ref=f26e209]: W
+              - generic [ref=f26e210]: i
+              - generic [ref=f26e211]: "n"
+              - generic [ref=f26e212]: g
+              - generic [ref=f26e213]: s
+            - generic [ref=f26e216]:
+              - generic [ref=f26e217]: "N"
+              - generic [ref=f26e218]: e
+              - generic [ref=f26e219]: u
+              - generic [ref=f26e220]: r
+              - generic [ref=f26e221]: a
+              - generic [ref=f26e222]: l
+              - generic [ref=f26e223]: W
+              - generic [ref=f26e224]: i
+              - generic [ref=f26e225]: "n"
+              - generic [ref=f26e226]: g
+              - generic [ref=f26e227]: s
+            - generic [ref=f26e230]:
+              - generic [ref=f26e231]: "N"
+              - generic [ref=f26e232]: e
+              - generic [ref=f26e233]: u
+              - generic [ref=f26e234]: r
+              - generic [ref=f26e235]: a
+              - generic [ref=f26e236]: l
+              - generic [ref=f26e237]: W
+              - generic [ref=f26e238]: i
+              - generic [ref=f26e239]: "n"
+              - generic [ref=f26e240]: g
+              - generic [ref=f26e241]: s
+            - generic [ref=f26e244]:
+              - generic [ref=f26e245]: "N"
+              - generic [ref=f26e246]: e
+              - generic [ref=f26e247]: u
+              - generic [ref=f26e248]: r
+              - generic [ref=f26e249]: a
+              - generic [ref=f26e250]: l
+              - generic [ref=f26e251]: W
+              - generic [ref=f26e252]: i
+              - generic [ref=f26e253]: "n"
+              - generic [ref=f26e254]: g
+              - generic [ref=f26e255]: s
+          - generic [ref=f26e258]: ↗
+        - link "Visit GLOVIÉRA website" [ref=f26e259] [cursor=pointer]:
+          - /url: https://www.gloviera.com/
+          - generic [aria-hidden] [ref=f26e261]:
+            - generic [ref=f26e263]:
+              - generic [ref=f26e264]: G
+              - generic [ref=f26e265]: L
+              - generic [ref=f26e266]: O
+              - generic [ref=f26e267]: V
+              - generic [ref=f26e268]: I
+              - generic [ref=f26e269]: É
+              - generic [ref=f26e270]: R
+              - generic [ref=f26e271]: A
+            - generic [ref=f26e274]:
+              - generic [ref=f26e275]: G
+              - generic [ref=f26e276]: L
+              - generic [ref=f26e277]: O
+              - generic [ref=f26e278]: V
+              - generic [ref=f26e279]: I
+              - generic [ref=f26e280]: É
+              - generic [ref=f26e281]: R
+              - generic [ref=f26e282]: A
+            - generic [ref=f26e285]:
+              - generic [ref=f26e286]: G
+              - generic [ref=f26e287]: L
+              - generic [ref=f26e288]: O
+              - generic [ref=f26e289]: V
+              - generic [ref=f26e290]: I
+              - generic [ref=f26e291]: É
+              - generic [ref=f26e292]: R
+              - generic [ref=f26e293]: A
+            - generic [ref=f26e296]:
+              - generic [ref=f26e297]: G
+              - generic [ref=f26e298]: L
+              - generic [ref=f26e299]: O
+              - generic [ref=f26e300]: V
+              - generic [ref=f26e301]: I
+              - generic [ref=f26e302]: É
+              - generic [ref=f26e303]: R
+              - generic [ref=f26e304]: A
+          - generic [ref=f26e307]: ↗
+        - link "Visit Creative Junction website" [ref=f26e308] [cursor=pointer]:
+          - /url: https://www.creative-junctions.com/
+          - generic [aria-hidden] [ref=f26e310]:
+            - generic [ref=f26e312]:
+              - generic [ref=f26e313]: C
+              - generic [ref=f26e314]: r
+              - generic [ref=f26e315]: e
+              - generic [ref=f26e316]: a
+              - generic [ref=f26e317]: t
+              - generic [ref=f26e318]: i
+              - generic [ref=f26e319]: v
+              - generic [ref=f26e320]: e
+              - generic [ref=f26e322]: J
+              - generic [ref=f26e323]: u
+              - generic [ref=f26e324]: "n"
+              - generic [ref=f26e325]: c
+              - generic [ref=f26e326]: t
+              - generic [ref=f26e327]: i
+              - generic [ref=f26e328]: o
+              - generic [ref=f26e329]: "n"
+            - generic [ref=f26e332]:
+              - generic [ref=f26e333]: C
+              - generic [ref=f26e334]: r
+              - generic [ref=f26e335]: e
+              - generic [ref=f26e336]: a
+              - generic [ref=f26e337]: t
+              - generic [ref=f26e338]: i
+              - generic [ref=f26e339]: v
+              - generic [ref=f26e340]: e
+              - generic [ref=f26e342]: J
+              - generic [ref=f26e343]: u
+              - generic [ref=f26e344]: "n"
+              - generic [ref=f26e345]: c
+              - generic [ref=f26e346]: t
+              - generic [ref=f26e347]: i
+              - generic [ref=f26e348]: o
+              - generic [ref=f26e349]: "n"
+            - generic [ref=f26e352]:
+              - generic [ref=f26e353]: C
+              - generic [ref=f26e354]: r
+              - generic [ref=f26e355]: e
+              - generic [ref=f26e356]: a
+              - generic [ref=f26e357]: t
+              - generic [ref=f26e358]: i
+              - generic [ref=f26e359]: v
+              - generic [ref=f26e360]: e
+              - generic [ref=f26e362]: J
+              - generic [ref=f26e363]: u
+              - generic [ref=f26e364]: "n"
+              - generic [ref=f26e365]: c
+              - generic [ref=f26e366]: t
+              - generic [ref=f26e367]: i
+              - generic [ref=f26e368]: o
+              - generic [ref=f26e369]: "n"
+            - generic [ref=f26e372]:
+              - generic [ref=f26e373]: C
+              - generic [ref=f26e374]: r
+              - generic [ref=f26e375]: e
+              - generic [ref=f26e376]: a
+              - generic [ref=f26e377]: t
+              - generic [ref=f26e378]: i
+              - generic [ref=f26e379]: v
+              - generic [ref=f26e380]: e
+              - generic [ref=f26e382]: J
+              - generic [ref=f26e383]: u
+              - generic [ref=f26e384]: "n"
+              - generic [ref=f26e385]: c
+              - generic [ref=f26e386]: t
+              - generic [ref=f26e387]: i
+              - generic [ref=f26e388]: o
+              - generic [ref=f26e389]: "n"
+          - generic [ref=f26e392]: ↗
+        - link "Visit EarnWings website" [ref=f26e393] [cursor=pointer]:
+          - /url: https://earnwings.org/
+          - generic [aria-hidden] [ref=f26e395]:
+            - generic [ref=f26e397]:
+              - generic [ref=f26e398]: E
+              - generic [ref=f26e399]: a
+              - generic [ref=f26e400]: r
+              - generic [ref=f26e401]: "n"
+              - generic [ref=f26e402]: W
+              - generic [ref=f26e403]: i
+              - generic [ref=f26e404]: "n"
+              - generic [ref=f26e405]: g
+              - generic [ref=f26e406]: s
+            - generic [ref=f26e409]:
+              - generic [ref=f26e410]: E
+              - generic [ref=f26e411]: a
+              - generic [ref=f26e412]: r
+              - generic [ref=f26e413]: "n"
+              - generic [ref=f26e414]: W
+              - generic [ref=f26e415]: i
+              - generic [ref=f26e416]: "n"
+              - generic [ref=f26e417]: g
+              - generic [ref=f26e418]: s
+            - generic [ref=f26e421]:
+              - generic [ref=f26e422]: E
+              - generic [ref=f26e423]: a
+              - generic [ref=f26e424]: r
+              - generic [ref=f26e425]: "n"
+              - generic [ref=f26e426]: W
+              - generic [ref=f26e427]: i
+              - generic [ref=f26e428]: "n"
+              - generic [ref=f26e429]: g
+              - generic [ref=f26e430]: s
+            - generic [ref=f26e433]:
+              - generic [ref=f26e434]: E
+              - generic [ref=f26e435]: a
+              - generic [ref=f26e436]: r
+              - generic [ref=f26e437]: "n"
+              - generic [ref=f26e438]: W
+              - generic [ref=f26e439]: i
+              - generic [ref=f26e440]: "n"
+              - generic [ref=f26e441]: g
+              - generic [ref=f26e442]: s
+          - generic [ref=f26e445]: ↗
+    - generic [ref=f26e446]:
+      - generic [ref=f26e447]:
+        - generic [ref=f26e448]: 06 / LET’S MAKE SOMETHING MATTER
+        - heading [level=2] [ref=f26e449]:
+          - text: Have a
+          - emphasis [ref=f26e450]: big idea?
+        - paragraph [ref=f26e451]: Tell us what you have in mind.We’ll start with a conversation.
+        - link "hello@cephionix.com ↗" [ref=f26e452] [cursor=pointer]:
+          - /url: mailto:hello@cephionix.com
+      - generic [ref=f26e453]:
+        - generic [ref=f26e454]:
+          - generic [ref=f26e455]:
+            - text: Your name
+            - textbox "Your name" [ref=f26e456]:
+              - /placeholder: Alex Singh
+          - generic [ref=f26e457]:
+            - text: Email address
+            - textbox "Email address" [ref=f26e458]:
+              - /placeholder: you@company.com
+        - generic [ref=f26e459]:
+          - text: What are you thinking?
+          - combobox "What are you thinking?" [ref=f26e460]:
+            - option "Custom software" [selected]
+            - option "CRM development"
+            - option "Web & mobile"
+            - option "Intelligent systems"
+            - option "NeuralWings"
+            - option "EarnWings"
+            - option "NavCalc launch updates"
+        - generic [ref=f26e461]:
+          - text: A little about your idea
+          - textbox "A little about your idea" [ref=f26e462]:
+            - /placeholder: The challenge, the ambition, the possibilities…
+        - button "Prepare your enquiry ↗" [ref=f26e463] [cursor=pointer]:
+          - text: Prepare your enquiry
+          - generic [ref=f26e464]: ↗
+        - paragraph [ref=f26e465]: Opens your email app with your enquiry ready to send.
+        - status
+  - contentinfo [ref=f26e466]:
+    - generic [ref=f26e467]: YOUR NEXT CHAPTER STARTS WITH A CONVERSATION
+    - link [ref=f26e468] [cursor=pointer]:
+      - /url: "#contact"
+      - generic [ref=f26e469]: LET’S BUILDSOMETHING.
+    - generic [ref=f26e471]:
+      - generic [ref=f26e472]: © 2026 Cephionix Software Developer (OPC) Pvt. Ltd.
+      - generic [ref=f26e473]: Built with purpose. Based in India.
+      - link "About" [ref=f26e474] [cursor=pointer]:
+        - /url: /about
+      - link "Privacy Policy" [ref=f26e475] [cursor=pointer]:
+        - /url: /privacy
+      - link "Cookie settings" [ref=f26e476] [cursor=pointer]:
+        - /url: "#"
+      - link "Back to top ↑" [ref=f26e477] [cursor=pointer]:
+        - /url: "#"
