@@ -1,3 +1,4 @@
+/*! © 2026 Cephionix Software Developer (OPC) Pvt. Ltd. All rights reserved. Proprietary: no copying or reuse without written permission. hello@cephionix.com */
 (function(){
 var KEY='cx-consent';
 function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
