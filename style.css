@@ -69,3 +69,9 @@ header .brand img{height:90px;max-height:none} @media(max-width:700px){header .b
 .footer-signature:hover .signature-arrow,.footer-signature:focus-visible .signature-arrow{background:var(--blue);color:#fff;border-color:var(--blue);transform:rotate(45deg)}
 @media(max-width:700px){.footer-signature{font-size:17vw;gap:14px}.footer-signature .signature-arrow{width:70px;height:70px;font-size:50px}}
 @media(prefers-reduced-motion:reduce){.footer-signature .signature-arrow{transition:none}}
+
+/* Footer arrows replaced by the rotating Cephionix core logo */
+.footer-arrow img,.signature-arrow img{width:92%;height:92%;object-fit:contain;display:block;transition:transform .6s cubic-bezier(.16,1,.3,1),filter .35s}
+.footer-name:hover .footer-arrow,.footer-signature:hover .signature-arrow,.footer-signature:focus-visible .signature-arrow{background:#fff;border-color:var(--blue);transform:none}
+.footer-name:hover .footer-arrow img,.footer-signature:hover .signature-arrow img,.footer-signature:focus-visible .signature-arrow img{transform:rotate(180deg) scale(1.08);filter:drop-shadow(0 0 10px #064bff66)}
+@media(prefers-reduced-motion:reduce){.footer-arrow img,.signature-arrow img{transition:none}}
