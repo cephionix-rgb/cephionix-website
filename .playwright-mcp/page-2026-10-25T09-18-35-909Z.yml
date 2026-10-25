@@ -1,0 +1,159 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - link "Cephionix home" [ref=f9e3] [cursor=pointer]:
+      - /url: /
+      - img "CEPHIONIX — Intelligence at the core" [ref=f9e4]
+    - navigation "Main navigation" [ref=f9e5]:
+      - link "Products" [ref=f9e6] [cursor=pointer]:
+        - /url: /#products
+      - link "Expertise" [ref=f9e7] [cursor=pointer]:
+        - /url: /#expertise
+      - link "About" [ref=f9e8] [cursor=pointer]:
+        - /url: /about
+    - link "Let’s talk ↗" [ref=f9e9] [cursor=pointer]:
+      - /url: /#contact
+      - text: Let’s talk
+      - generic [ref=f9e10]: ↗
+  - main [ref=f9e11]:
+    - generic [ref=f9e12]:
+      - generic [ref=f9e13]: CLEAR INFORMATION. CONSIDERED BY DESIGN.
+      - heading "Your privacy. Our responsibility." [level=1] [ref=f9e14]:
+        - generic [ref=f9e15]:
+          - generic [ref=f9e16]: "Y"
+          - generic [ref=f9e17]: O
+          - generic [ref=f9e18]: U
+          - generic [ref=f9e19]: R
+          - generic [ref=f9e21]: P
+          - generic [ref=f9e22]: R
+          - generic [ref=f9e23]: I
+          - generic [ref=f9e24]: V
+          - generic [ref=f9e25]: A
+          - generic [ref=f9e26]: C
+          - generic [ref=f9e27]: "Y"
+          - generic [ref=f9e28]: .
+        - emphasis [ref=f9e29]: OUR RESPONSIBILITY.
+      - paragraph [ref=f9e30]: A plain-language guide to the information shared through this website.
+      - text: "Last updated: 25 October 2026"
+    - generic [ref=f9e31]:
+      - complementary [ref=f9e32]:
+        - generic [ref=f9e33]: ON THIS PAGE
+        - link "01 / Who we are" [ref=f9e34] [cursor=pointer]:
+          - /url: "#policy-1"
+        - link "02 / Information you choose to share" [ref=f9e35] [cursor=pointer]:
+          - /url: "#policy-2"
+        - link "03 / How the enquiry form works" [ref=f9e36] [cursor=pointer]:
+          - /url: "#policy-3"
+        - link "04 / How we use information" [ref=f9e37] [cursor=pointer]:
+          - /url: "#policy-4"
+        - link "05 / Website hosting and technical information" [ref=f9e38] [cursor=pointer]:
+          - /url: "#policy-5"
+        - link "06 / Cookies, fonts and external services" [ref=f9e39] [cursor=pointer]:
+          - /url: "#policy-6"
+        - link "07 / Sharing and service providers" [ref=f9e40] [cursor=pointer]:
+          - /url: "#policy-7"
+        - link "08 / Retention and security" [ref=f9e41] [cursor=pointer]:
+          - /url: "#policy-8"
+        - link "09 / Your choices and requests" [ref=f9e42] [cursor=pointer]:
+          - /url: "#policy-9"
+        - link "10 / Children and third-party websites" [ref=f9e43] [cursor=pointer]:
+          - /url: "#policy-10"
+        - link "11 / Updates and contact" [ref=f9e44] [cursor=pointer]:
+          - /url: "#policy-11"
+      - generic [ref=f9e45]:
+        - generic [ref=f9e46]:
+          - text: "01"
+          - heading "Who we are" [level=2] [ref=f9e47]
+          - paragraph [ref=f9e48]:
+            - text: This policy describes how Cephionix Software Developer (OPC) Pvt. Ltd. handles information in connection with this company website and enquiries sent through it. Contact us at
+            - link "hello@cephionix.com" [ref=f9e49] [cursor=pointer]:
+              - /url: mailto:hello@cephionix.com
+            - text: . Linked products, including NeuralWings and EarnWings, have their own privacy notices.
+        - generic [ref=f9e50]:
+          - text: "02"
+          - heading "Information you choose to share" [level=2] [ref=f9e51]
+          - paragraph [ref=f9e52]: The enquiry form asks for your name, email address, area of interest and project description. Please include only the information needed for your enquiry and avoid sending passwords, payment details or sensitive personal records.
+        - generic [ref=f9e53]:
+          - text: "03"
+          - heading "How the enquiry form works" [level=2] [ref=f9e54]
+          - paragraph [ref=f9e55]: Selecting “Prepare your enquiry” opens your email application with a draft addressed to hello@cephionix.com. The website does not send that draft automatically or save the form entries to a website database. You choose whether to send it through your email provider. If you send it, we receive the information in that email.
+        - generic [ref=f9e56]:
+          - text: "04"
+          - heading "How we use information" [level=2] [ref=f9e57]
+          - paragraph [ref=f9e58]: We use enquiries to respond to questions, understand project requirements, discuss our products or services and manage the resulting business relationship. If you request launch information, we use your contact details to respond to that request. We do not use this website to sell personal information or run targeted advertising.
+        - generic [ref=f9e59]:
+          - text: "05"
+          - heading "Website hosting and technical information" [level=2] [ref=f9e60]
+          - paragraph [ref=f9e61]: The hosting platform and its infrastructure providers may process technical information such as IP address, browser details, requested pages and timestamps to deliver the website, manage access, diagnose problems and protect the service. This website is hosted on GitHub Pages. We also use Google Analytics to understand how visitors use the site, which collects information such as pages viewed, approximate location, device and browser type, and how you arrived at the site. This information is used in aggregate to improve the website.
+        - generic [ref=f9e62]:
+          - text: "06"
+          - heading "Cookies, fonts and external services" [level=2] [ref=f9e63]
+          - paragraph [ref=f9e64]: We do not add advertising pixels to this website. We use Google Analytics, a web analytics service provided by Google, which sets cookies or uses similar technologies in your browser to measure website traffic and usage. These analytics cookies are only used if you click “Accept” on the cookie banner; until then, analytics storage stays switched off. You can change your choice at any time using “Cookie settings” in the page footer. Google processes this information on our behalf under its own privacy policy, and you can opt out using the Google Analytics opt-out browser add-on (tools.google.com/dlpage/gaoptout) or your browser’s cookie settings. The hosting platform may also use cookies or similar technologies for access and security. Fonts may be loaded from Google Fonts; your browser connects to that service to retrieve them and shares the technical information required for that request. Product links and your email application are external services with their own privacy practices.
+        - generic [ref=f9e65]:
+          - text: "07"
+          - heading "Sharing and service providers" [level=2] [ref=f9e66]
+          - paragraph [ref=f9e67]: Information may be processed by providers used for website hosting, email delivery and business communications. We may also share information when necessary to comply with a valid legal obligation or to protect the security and rights of our business and users. We do not publish your enquiry.
+        - generic [ref=f9e68]:
+          - text: "08"
+          - heading "Retention and security" [level=2] [ref=f9e69]
+          - paragraph [ref=f9e70]: We keep correspondence for as long as reasonably needed to respond, manage the relationship and meet applicable record-keeping obligations. Retention can also depend on our email and service providers. We take reasonable care with information, but no online service or email transmission can be guaranteed completely secure.
+        - generic [ref=f9e71]:
+          - text: "09"
+          - heading "Your choices and requests" [level=2] [ref=f9e72]
+          - paragraph [ref=f9e73]: You can choose not to send an enquiry. To ask about information you have shared, request correction or deletion, or withdraw a request for future contact, email hello@cephionix.com. We will consider your request and any applicable obligations; we may need to verify who is making it.
+        - generic [ref=f9e74]:
+          - text: "10"
+          - heading "Children and third-party websites" [level=2] [ref=f9e75]
+          - paragraph [ref=f9e76]: This company website is intended for people exploring our business, products and services. We do not intentionally request personal information from children through it. If you believe a child has sent us personal information, contact us. We are not responsible for the information practices of linked websites.
+        - generic [ref=f9e77]:
+          - text: "11"
+          - heading "Updates and contact" [level=2] [ref=f9e78]
+          - paragraph [ref=f9e79]: We may update this policy when the website or its information practices change. The date on this page identifies the latest revision. For privacy questions or concerns, contact hello@cephionix.com.
+  - contentinfo [ref=f9e80]:
+    - generic [ref=f9e81]:
+      - generic [ref=f9e82]:
+        - text: CEPHIONIX / INTELLIGENCE AT THE CORE
+        - heading "Good things start with a conversation." [level=2] [ref=f9e83]: Good things startwith a conversation.
+        - link "hello@cephionix.com ↗" [ref=f9e84] [cursor=pointer]:
+          - /url: mailto:hello@cephionix.com
+      - generic [ref=f9e85]:
+        - generic [ref=f9e86]: EXPLORE
+        - link "Selected work" [ref=f9e87] [cursor=pointer]:
+          - /url: /#work
+        - link "Our products" [ref=f9e88] [cursor=pointer]:
+          - /url: /#products
+        - link "What we build" [ref=f9e89] [cursor=pointer]:
+          - /url: /#expertise
+        - link "Our story" [ref=f9e90] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=f9e91]:
+        - generic [ref=f9e92]: OUR PRODUCTS
+        - link "NeuralWings ↗" [ref=f9e93] [cursor=pointer]:
+          - /url: https://neuralwings.org/
+        - link "EarnWings ↗" [ref=f9e94] [cursor=pointer]:
+          - /url: https://earnwings.org/
+        - link "NavCalc · Coming soon" [ref=f9e95] [cursor=pointer]:
+          - /url: /#products
+        - link "Custom CRM & dashboards" [ref=f9e96] [cursor=pointer]:
+          - /url: /#contact
+    - link "Let’s build — start a project" [ref=f9e97] [cursor=pointer]:
+      - /url: /#contact
+      - generic [aria-hidden] [ref=f9e98]:
+        - generic [ref=f9e99]: L
+        - generic [ref=f9e100]: E
+        - generic [ref=f9e101]: T
+        - generic [ref=f9e102]: ’
+        - generic [ref=f9e103]: S
+        - generic [ref=f9e105]: B
+        - generic [ref=f9e106]: U
+        - generic [ref=f9e107]: I
+        - generic [ref=f9e108]: L
+        - generic [ref=f9e109]: D
+    - generic [ref=f9e111]:
+      - generic [ref=f9e112]: © 2026 Cephionix Software Developer (OPC) Pvt. Ltd.
+      - generic [ref=f9e113]: Built with purpose. Based in India.
+      - link "Privacy Policy" [ref=f9e114] [cursor=pointer]:
+        - /url: /privacy
+      - link "Cookie settings" [ref=f9e115] [cursor=pointer]:
+        - /url: "#"
+      - link "Back to top ↑" [ref=f9e116] [cursor=pointer]:
+        - /url: "#"
