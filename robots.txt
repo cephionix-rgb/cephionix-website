@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /apps-script/
 
 Sitemap: https://www.cephionix.com/sitemap.xml
