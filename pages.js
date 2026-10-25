@@ -1,0 +1,8 @@
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.about-story-columns,.about-product-grid>a,.about-principles article,.about-invitation').forEach(e=>{e.classList.add('visible-on-scroll');io.observe(e)});const statement=document.querySelector('.reading-reveal');if(statement){statement.innerHTML=statement.textContent.split(' ').map(w=>`<span>${w}</span>`).join(' ');function reveal(){const r=statement.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.85-r.top)/(innerHeight*.5)));const words=statement.querySelectorAll('span');words.forEach((w,i)=>w.style.opacity=.2+.8*Math.max(0,Math.min(1,(p-i/words.length*.5)*2)))}addEventListener('scroll',reveal,{passive:true});reveal()}}
+
+const footerSignature=document.querySelector('.footer-signature');
+if(footerSignature){if(reduce)footerSignature.classList.add('signature-ready');else{const footerMotion=new IntersectionObserver(entries=>entries.forEach(entry=>{entry.target.classList.toggle('signature-ready',entry.isIntersecting)}),{threshold:.25});footerMotion.observe(footerSignature)}}
+
+const aboutLetterHeading=document.querySelector('.about-letter-heading');
+if(aboutLetterHeading){if(reduce)aboutLetterHeading.classList.add('letters-ready');else{const headingLetters=new IntersectionObserver(entries=>entries.forEach(entry=>{entry.target.classList.toggle('letters-ready',entry.isIntersecting)}),{threshold:.15});headingLetters.observe(aboutLetterHeading)}}
