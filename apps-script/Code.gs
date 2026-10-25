@@ -1,3 +1,4 @@
+/*! © 2026 Cephionix Software Developer (OPC) Pvt. Ltd. All rights reserved. Proprietary: no copying, hosting or reuse without written permission. hello@cephionix.com */
 /**
  * Cephionix: website enquiry handler (Google Apps Script web app)
  *

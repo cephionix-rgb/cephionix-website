@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# © 2026 Cephionix Software Developer (OPC) Pvt. Ltd. All rights reserved. Proprietary: no copying, hosting or reuse without written permission. hello@cephionix.com
 """Re-generate the Content-Security-Policy <meta> in every page.
 
 GitHub Pages cannot send HTTP security headers, so the policy lives in a <meta> tag.
