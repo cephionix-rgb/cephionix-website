@@ -192,3 +192,6 @@ ar-g{display:inline}
 #form-status.err{color:#b3261e;font-weight:600}
 #form-status.err a{color:inherit;text-decoration:underline}
 #enquiry button[type=submit][disabled]{opacity:.65;cursor:progress;pointer-events:none}
+
+/* Headings with a highlighted <em>: keep the letters white on hover (the default blue would vanish on the blue box) */
+.about-letter-heading.letters-ready em .about-letter-line:hover .hero-motion-letter{color:#fff}
