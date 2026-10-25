@@ -61,3 +61,11 @@ header .brand img{height:90px;max-height:none} @media(max-width:700px){header .b
 /* The central brand core completes a continuous 360-degree turn. */
 .core-sculpture img{transform-origin:50% 50%;animation:core-full-turn 24s linear infinite;will-change:transform}@keyframes core-full-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.core-sculpture img{animation:none;will-change:auto}}
+
+/* About footer signature: same look and motion as the home "LET'S BUILD SOMETHING." */
+.footer-signature{overflow:visible;align-items:center;gap:24px;font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(70px,10vw,150px);font-weight:700;line-height:.94;letter-spacing:-2px;padding:30px 0 20px}
+.footer-signature .signature-text{overflow:hidden;padding:.06em .08em .12em 0;margin:-.06em 0 -.12em}
+.footer-signature .signature-arrow{display:flex;align-items:center;justify-content:center;width:150px;height:150px;border:1px solid #b5c3d8;border-radius:50%;font-family:'DM Sans',sans-serif;font-size:100px;line-height:1;letter-spacing:0;color:var(--navy);transition:transform .45s,background .35s,color .35s}
+.footer-signature:hover .signature-arrow,.footer-signature:focus-visible .signature-arrow{background:var(--blue);color:#fff;border-color:var(--blue);transform:rotate(45deg)}
+@media(max-width:700px){.footer-signature{font-size:17vw;gap:14px}.footer-signature .signature-arrow{width:70px;height:70px;font-size:50px}}
+@media(prefers-reduced-motion:reduce){.footer-signature .signature-arrow{transition:none}}

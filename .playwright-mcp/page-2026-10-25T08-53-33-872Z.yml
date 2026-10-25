@@ -1,0 +1,148 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Cephionix home" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+      - img "CEPHIONIX — Intelligence at the core" [ref=e4]
+    - navigation "Main navigation" [ref=e5]:
+      - link "Products" [ref=e6] [cursor=pointer]:
+        - /url: index.html#products
+      - link "Expertise" [ref=e7] [cursor=pointer]:
+        - /url: index.html#expertise
+      - link "About" [ref=e8] [cursor=pointer]:
+        - /url: about.html
+    - link "Let’s talk ↗" [ref=e9] [cursor=pointer]:
+      - /url: index.html#contact
+      - text: Let’s talk
+      - generic [ref=e10]: ↗
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: INSIDE CEPHIONIX / BUILT IN INDIA
+      - heading "Curious minds. Real-world possibilities." [level=1] [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: C
+          - generic [ref=e17]: U
+          - generic [ref=e18]: R
+          - generic [ref=e19]: I
+          - generic [ref=e20]: O
+          - generic [ref=e21]: U
+          - generic [ref=e22]: S
+          - generic [ref=e24]: M
+          - generic [ref=e25]: I
+          - generic [ref=e26]: "N"
+          - generic [ref=e27]: D
+          - generic [ref=e28]: S
+          - generic [ref=e29]: .
+        - emphasis [ref=e30]: REAL-WORLD
+        - generic [ref=e31]:
+          - generic [ref=e32]: P
+          - generic [ref=e33]: O
+          - generic [ref=e34]: S
+          - generic [ref=e35]: S
+          - generic [ref=e36]: I
+          - generic [ref=e37]: B
+          - generic [ref=e38]: I
+          - generic [ref=e39]: L
+          - generic [ref=e40]: I
+          - generic [ref=e41]: T
+          - generic [ref=e42]: I
+          - generic [ref=e43]: E
+          - generic [ref=e44]: S
+          - generic [ref=e45]: .
+      - paragraph [ref=e46]: We see the complex.We build the clear.
+      - generic [ref=e47]:
+        - img "A miniature software design studio" [ref=e50]
+        - generic [ref=e51]: Think deeply.
+        - generic [ref=e52]: Build deliberately.
+        - generic [ref=e53]: Keep moving.
+      - link "MEET THE MINDSET ↓" [ref=e54] [cursor=pointer]:
+        - /url: "#our-story"
+    - generic [ref=e55]:
+      - generic [ref=e56]: 01 / THE WAY WE SEE IT
+      - heading "Every great system begins with a better question." [level=2] [ref=e57]
+      - generic [ref=e58]:
+        - paragraph [ref=e59]: CEPHIONIX is a software product and development company. We turn difficult workflows and ambitious ideas into digital tools people can use.
+        - paragraph [ref=e60]: Our own products explore aviation management, pilot learning and precision calculation. Our client work brings the same care to custom software, CRMs, websites, apps and intelligent systems.
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]: 02 / IDEAS TAKING SHAPE
+          - heading "Our thinking. Out in the world." [level=2] [ref=e65]: Our thinking.Out in the world.
+        - paragraph [ref=e66]: From imagination to useful software.A closer look at what we build.
+      - generic [ref=e67]:
+        - link "Software design studio concept 01 / Software with purpose ↗ From a first sketch to a useful digital experience." [ref=e68] [cursor=pointer]:
+          - /url: index.html#expertise
+          - img "Software design studio concept" [ref=e69]
+          - generic [ref=e70]: 01 / Software with purpose ↗
+          - paragraph [ref=e71]: From a first sketch to a useful digital experience.
+        - link "CRM and business analytics concept 02 / A connected business ↗ Custom CRMs, dashboards and workflows built around your team." [ref=e72] [cursor=pointer]:
+          - /url: index.html#products
+          - img "CRM and business analytics concept" [ref=e73]
+          - generic [ref=e74]: 02 / A connected business ↗
+          - paragraph [ref=e75]: Custom CRMs, dashboards and workflows built around your team.
+        - link "An idea taking shape as a digital product 03 / Ideas in the world ↗ Discover the websites and platforms we have built." [ref=e76] [cursor=pointer]:
+          - /url: index.html#work
+          - img "An idea taking shape as a digital product" [ref=e77]
+          - generic [ref=e78]: 03 / Ideas in the world ↗
+          - paragraph [ref=e79]: Discover the websites and platforms we have built.
+    - generic [ref=e80]:
+      - generic [ref=e81]: 03 / THE PRINCIPLES WE BUILD ON
+      - article [ref=e82]:
+        - generic [ref=e83]: "01"
+        - heading "Start with the problem." [level=3] [ref=e84]
+        - paragraph [ref=e85]: Understand the real work before deciding what to build.
+      - article [ref=e86]:
+        - generic [ref=e87]: "02"
+        - heading "Make complexity useful." [level=3] [ref=e88]
+        - paragraph [ref=e89]: Let the software do the difficult work, so the experience feels clear.
+      - article [ref=e90]:
+        - generic [ref=e91]: "03"
+        - heading "Keep asking. Keep improving." [level=3] [ref=e92]
+        - paragraph [ref=e93]: Test ideas, listen closely and refine what matters.
+  - contentinfo [ref=e94]:
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - text: CEPHIONIX / INTELLIGENCE AT THE CORE
+        - heading "Good things start with a conversation." [level=2] [ref=e97]: Good things startwith a conversation.
+        - link "hello@cephionix.com ↗" [ref=e98] [cursor=pointer]:
+          - /url: mailto:hello@cephionix.com
+      - generic [ref=e99]:
+        - generic [ref=e100]: EXPLORE
+        - link "Selected work" [ref=e101] [cursor=pointer]:
+          - /url: index.html#work
+        - link "Our products" [ref=e102] [cursor=pointer]:
+          - /url: index.html#products
+        - link "What we build" [ref=e103] [cursor=pointer]:
+          - /url: index.html#expertise
+        - link "Our story" [ref=e104] [cursor=pointer]:
+          - /url: about.html
+      - generic [ref=e105]:
+        - generic [ref=e106]: OUR PRODUCTS
+        - link "NeuralWings ↗" [ref=e107] [cursor=pointer]:
+          - /url: https://neuralwings.org/
+        - link "EarnWings ↗" [ref=e108] [cursor=pointer]:
+          - /url: https://earnwings.org/
+        - link "NavCalc · Coming soon" [ref=e109] [cursor=pointer]:
+          - /url: index.html#products
+        - link "Custom CRM & dashboards" [ref=e110] [cursor=pointer]:
+          - /url: index.html#contact
+    - link "Let’s build — start a project" [ref=e111] [cursor=pointer]:
+      - /url: index.html#contact
+      - generic [aria-hidden] [ref=e112]:
+        - generic [ref=e113]: L
+        - generic [ref=e114]: E
+        - generic [ref=e115]: T
+        - generic [ref=e116]: ’
+        - generic [ref=e117]: S
+        - generic [ref=e119]: B
+        - generic [ref=e120]: U
+        - generic [ref=e121]: I
+        - generic [ref=e122]: L
+        - generic [ref=e123]: D
+      - generic [aria-hidden] [ref=e124]: ↗
+    - generic [ref=e125]:
+      - generic [ref=e126]: © 2026 Cephionix Software Developer (OPC) Pvt. Ltd.
+      - generic [ref=e127]: Built with purpose. Based in India.
+      - link "Privacy Policy" [ref=e128] [cursor=pointer]:
+        - /url: privacy.html
+      - link "Back to top ↑" [ref=e129] [cursor=pointer]:
+        - /url: "#"
