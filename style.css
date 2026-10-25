@@ -195,3 +195,29 @@ ar-g{display:inline}
 
 /* Headings with a highlighted <em>: keep the letters white on hover (the default blue would vanish on the blue box) */
 .about-letter-heading.letters-ready em .about-letter-line:hover .hero-motion-letter{color:#fff}
+
+/* 404: lost in the clouds. Realistic cloud banks part to reveal the heading, then clouds drift. */
+.sky-stage{position:relative;overflow:hidden;isolation:isolate;min-height:84vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 6% 110px;background:radial-gradient(42% 36% at 16% 6%,rgba(255,255,255,.6) 0%,rgba(255,255,255,0) 70%),linear-gradient(180deg,#72abe9 0%,#9cc6f1 40%,#cfe3f8 74%,#f1f6fc 100%)}
+.sky-content{position:relative;z-index:3;max-width:960px;opacity:0;animation:sky-content-in 1s ease 1.1s forwards}
+.sky-content p{margin:26px auto 0;max-width:520px}
+.sky-cta{margin-top:34px}
+.sky-clouds{position:absolute;inset:0;z-index:1;pointer-events:none}
+.sky-cloud{position:absolute;left:var(--x);top:var(--y);width:min(var(--w),74vw);height:auto;opacity:var(--o,1);animation:sky-drift var(--d,28s) ease-in-out infinite alternate;will-change:transform;user-select:none}
+.sky-clouds .sky-cloud:nth-child(even){animation-direction:alternate-reverse}
+.sky-gate{position:absolute;top:-4%;bottom:-4%;width:88%;z-index:5;pointer-events:none;will-change:transform}
+.sky-gate.left{left:-12%;animation:sky-gate-left 2.9s cubic-bezier(.65,0,.25,1) .6s forwards}
+.sky-gate.right{right:-12%;animation:sky-gate-right 2.9s cubic-bezier(.65,0,.25,1) .6s forwards}
+.sky-bank{display:block;width:100%;height:100%;object-fit:cover}
+.sky-gate.left .sky-bank{object-position:left center}
+.sky-gate.right .sky-bank{object-position:right center}
+@keyframes sky-drift{from{transform:translateX(-30px)}to{transform:translateX(38px)}}
+@keyframes sky-gate-left{to{transform:translateX(-125%);visibility:hidden}}
+@keyframes sky-gate-right{to{transform:translateX(125%);visibility:hidden}}
+@keyframes sky-content-in{to{opacity:1}}
+@media(max-width:700px){.sky-stage{min-height:76vh;padding:70px 6% 90px}.sky-gate{width:110%}}
+@media(prefers-reduced-motion:reduce){.sky-gate{display:none}.sky-content{opacity:1;animation:none}.sky-cloud{animation:none}}
+
+/* 404: the blue box wipes in from the left as its letters rise */
+.sky-content h1 em{background:linear-gradient(var(--blue),var(--blue)) left center/0% 100% no-repeat;animation:sky-em-wipe .8s cubic-bezier(.2,.8,.2,1) 1.72s forwards}
+@keyframes sky-em-wipe{to{background-size:100% 100%}}
+@media(prefers-reduced-motion:reduce){.sky-content h1 em{background-size:100% 100%;animation:none}}
