@@ -234,3 +234,5 @@ ar-g{display:inline}
 @keyframes reel-up{to{transform:translateY(-50%)}}
 @keyframes reel-down{from{transform:translateY(-50%)}to{transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.reel .reel-column{animation:none!important}}
+
+.about-hero-art>img{transition:scale .5s cubic-bezier(.2,.7,.2,1);cursor:pointer}.about-hero-art>img:hover{scale:1.06}@media(prefers-reduced-motion:reduce){.about-hero-art>img{transition:none}}
